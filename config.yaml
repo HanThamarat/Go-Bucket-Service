@@ -1,0 +1,19 @@
+DB:
+  URL: mongodb://root:root@mongo:27017/TripWithMe?authSource=admin
+  DBNAME: TripWithMe
+  COLLECTION: users
+
+Server:
+  Port: 3000
+
+App:
+  NAME: "Go-Bucket-Service"
+
+SWAGGER:
+  HOST: http://localhost:3000
+
+JWT:
+  Secret: secret
+  Expired: 1h
+  RefreshSecret: refreshSecret
+  RefreshExpired: 168h
